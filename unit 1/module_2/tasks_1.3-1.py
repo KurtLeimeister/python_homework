@@ -12,12 +12,17 @@ print(student_name,'will be in the class for',student_age, 'year old students.',
 phrase = 'Indentation matters'
 
 
-# defining function
-# input: none
-# output: none
-
+# define yell_it. input: none; output: none
 def yell_it():
     print(phrase.upper() + '!')
-
-
+#call yell_it
 yell_it()
+
+# Task 3: defining a fundtion with input and default values
+# [ ] define yell_this()
+def yell_this(words_to_yell='default string'):
+    print(words_to_yell.upper()+'!')
+# [ ] get user input in variable words_to_yell
+words_to_yell=input('Words to be shouted: ')
+# [ ] call yell_this function with words_to_yell as argument
+yell_this(words_to_yell)
