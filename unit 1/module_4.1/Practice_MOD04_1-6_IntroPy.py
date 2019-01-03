@@ -127,6 +127,8 @@ def ticket_check(section, seats):
         if section__lower.startswith('f'):
             if int(seats) <= 4:
                 return True
+    else:
+        return False
 
 
 desired_section = input('\nPlease enter section (general / floor): ')
